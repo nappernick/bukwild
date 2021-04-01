@@ -4,7 +4,7 @@ function Page({ page }) {
     const { background, cta, headline, subhead, type } = page
     return (
         <>
-            <img src={`/backgrounds/${background}`} alt="" className="background"/>
+            <img src={`/backgrounds/${background}`} alt="Background Image" className="background"/>
             {/* <div
                 className="background"
                 style={{
