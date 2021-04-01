@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,124 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+:root {
+  --white: white;
+}
+
+body {
+  font-family: HelveticaNeue, "Open Sans";
+}
+
+.page__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page__container, .page__container > *, :not(.background) {
+  max-width: 1440px;
+}
+
+.layout__section {
+  width: 85vw;
+  height: 17vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_text__container {
+  margin: 1rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.abc {  
+  width: 4.728rem;
+  height: 2.363rem;
+  object-fit: contain;
+}
+
+.Industry-Services-AboutUs {
+  display: flex;
+  flex-direction: column;
+  width: 4.563rem;
+  height: 4.875rem;
+  margin: 0.958rem .145rem 0 .021rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+}
+
+.Industry-Services-AboutUs > a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a.text-style-1 {
+  color: #ffc004;
+}
+
+.contact_us__container {
+  width: 8.063rem;
+  height: 3rem;
+  margin: 0.958rem 2.945rem 4.7rem .021rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.contact_us__text_box {   
+  width: 8.688rem;
+  height: 1.225rem;
+  margin: 0 0 1.03rem 1rem;
+  padding: 0.75rem 0.063rem 0.75rem 0;
+  border: solid 1px var(--white);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.text {
+  width: 8.625rem;
+  height: 1.125rem;
+  margin: 0 0 .079rem 0;
+  font-size: .938rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+}
+
+div.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align:center;
+  margin:auto;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+
+.lets_talk__text::after {
+  /* Not an exact match for the arrow, but close */
+  content: '\027f6';
+  padding: 0 0 0 1rem;
+  font-size: 20px;
+  color: #ffc004;
 }
