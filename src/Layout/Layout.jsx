@@ -19,7 +19,7 @@ function Layout({ consolidatedObj }) {
                         <NavLink
                             to={`/${link.slug}`}
                             className={`text-style-${selected === link.slug ? "1" : "0"}`}
-
+                            key={link.slug}
                             onClick={(e) => setDetails(e, link.slug)}
                         >{`${link.title}`}
                         </NavLink>

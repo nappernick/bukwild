@@ -63,7 +63,7 @@ function App() {
         {Object.values(pageData).length && Object.values(pageData).map(page => {
           if (page.type === "marquee") {
             return (
-              <Route exact path={`/${page.slug}`} render={() => (
+              <Route exact path={`/${page.slug}`} key={page.slug} render={() => (
                 <Page page={page} />
               )} />)
           }
