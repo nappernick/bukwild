@@ -29,7 +29,6 @@ function App() {
           "title": page.title,
           "slug": page.slug
         })
-        console.log(page.blocks)
         pageDataArray[page.slug] = {
           "type": page.blocks[0].type,
           "headline": page.blocks[0].headline,

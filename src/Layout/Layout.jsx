@@ -1,13 +1,15 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import abc from '../assets/abc_logo.svg';
 
 function Layout({ consolidatedObj }) {
     const { setSelected, setTitle, selected, layoutData } = consolidatedObj
+    const params = useParams()
     const setDetails = (e, slug) => {
         setSelected(slug)
         setTitle(e.target.innerHTML)
     }
+    console.log(params)
     return (
         <div className="layout__section">
             <div className="logo_text__container">
@@ -17,6 +19,7 @@ function Layout({ consolidatedObj }) {
                         <NavLink
                             to={`/${link.slug}`}
                             className={`text-style-${selected === link.slug ? "1" : "0"}`}
+
                             onClick={(e) => setDetails(e, link.slug)}
                         >{`${link.title}`}
                         </NavLink>
