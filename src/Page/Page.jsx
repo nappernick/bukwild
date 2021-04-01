@@ -1,16 +1,10 @@
 import React from 'react'
 
 function Page({ page }) {
-    const { background, cta, headline, subhead, type } = page
+    const { background, cta, headline, subhead } = page
     return (
         <>
-            <img src={`/backgrounds/${background}`} alt="Background Image" className="background"/>
-            {/* <div
-                className="background"
-                style={{
-                    "backgroundImage": `url(/backgrounds/${background})`
-                }}
-            /> */}
+            <img src={`/backgrounds/${background}`} alt="Background" className="background" />
             <div className="head_subhead__container">
                 <div className="title">{headline}</div>
                 <div className="subhead">{subhead}</div>
@@ -21,6 +15,6 @@ function Page({ page }) {
             </div>
         </>
     )
-} 
+}
 
 export default Page

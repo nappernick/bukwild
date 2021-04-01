@@ -1,6 +1,5 @@
-import { fetch } from "cross-fetch"
 import { useEffect, useState } from 'react';
-import { Switch, NavLink, BrowserRouter as Router, Route } from "react-router-dom"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 import './App.css';
 import Layout from "./Layout/Layout"
 import data from "./assets/JSONData"
@@ -54,7 +53,7 @@ function App() {
   useEffect(() => {
     setJsonData(data.pages)
     setTitleTag(title)
-  }, [])
+  }, [title])
 
   return (
     <Router>
@@ -69,6 +68,7 @@ function App() {
                 <Page page={page} />
               )} />)
           }
+          return <></>
         })}
       </div >
     </Router>
