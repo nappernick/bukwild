@@ -62,16 +62,14 @@ function App() {
         <Layout
           consolidatedObj={consolidatedObj}
         />
-        <div className="section__lower">
-          {Object.values(pageData).length && Object.values(pageData).map(page => {
-            if (page.type === "marquee") {
-              return (
-                <Route exact path={`/${page.slug}`} render={() => (
-                  <Page page={page} />
-                )} />)
-            }
-          })}
-        </div>
+        {Object.values(pageData).length && Object.values(pageData).map(page => {
+          if (page.type === "marquee") {
+            return (
+              <Route exact path={`/${page.slug}`} render={() => (
+                <Page page={page} />
+              )} />)
+          }
+        })}
       </div >
     </Router>
   );
