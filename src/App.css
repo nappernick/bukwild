@@ -132,9 +132,10 @@ a.text-style-1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
-div.text {
+.text {
   width: 8.625rem;
   height: 1.125rem;
   margin: 0 0 .079rem 0;
@@ -168,7 +169,7 @@ div.text {
 .head_subhead__container {
   width: 81.94vw;
   height: auto;
-  margin: 0 0 11.188rem 0;
+  margin: 11.563rem 0 11.188rem 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -243,6 +244,7 @@ div.text {
   color: var(--black);
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .lets_talk__text::after {
@@ -260,13 +262,19 @@ div.text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    min-height: 700px;
+    align-items: flex-start;
+    height: 100%;
+    min-height: 100px;
     margin: 0;
+  }
+  .title {
+    min-height: 5rem;
+    height: 100%;
+    margin: 3rem 0 3rem 0;
   }
   .subhead {
     min-width: 250px;
     height: 100%;
-    margin: 0;
+    margin: 0 0 3rem 0;
   }
 }

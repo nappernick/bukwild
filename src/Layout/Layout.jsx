@@ -28,9 +28,17 @@ function Layout({ consolidatedObj }) {
                 </div>
             </div>
             <div className="contact_us__container">
-                <div className="contact_us__text_box">
-                    <div className="text">Contact Us</div>
-                </div>
+                <a
+                    className="contact_us__text_box"
+                    href="https://calendly.com/nickfmatthews/bukwild-chat"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    <div
+                        className="text"
+
+                    >Contact Us</div>
+                </a>
             </div>
         </div>
     )
