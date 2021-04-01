@@ -21,6 +21,6 @@ function Page({ page }) {
             </div>
         </>
     )
-}
+} 
 
 export default Page
