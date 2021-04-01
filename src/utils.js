@@ -3,7 +3,7 @@ export const setTitleTag = (title) => {
     titleElement.innerHTML = title
 }
 
-export const buildJsonData = (jsonData, setLayoutData, setPageData, setSelected, setTitle) => {
+export const buildJsonData = (jsonData, setLayoutData, setMarqueeData, setSelected, setTitle) => {
     let layoutDataArray = []
     let pageDataArray = {}
     jsonData.forEach(page => {
@@ -21,7 +21,7 @@ export const buildJsonData = (jsonData, setLayoutData, setPageData, setSelected,
         }
     })
     setLayoutData(layoutDataArray)
-    setPageData(pageDataArray)
+    setMarqueeData(pageDataArray)
     setSelected(jsonData[0].slug)
     setTitle(jsonData[0].title)
 }

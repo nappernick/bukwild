@@ -12,7 +12,7 @@ function Page({ page }) {
             <div className="cta__container">
                 <h2 className="cta">{cta}</h2>
                 <a
-                    className="lets_talk__text"
+                    className="cta__text"
                     href="https://calendly.com/nickfmatthews/bukwild-chat"
                     rel="noopener noreferrer"
                     target="_blank"

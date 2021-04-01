@@ -15,7 +15,10 @@ function Layout({ consolidatedObj }) {
             <div className="logo_text__container">
                 <img src={abc} alt="ABC Logo" className="abc" />
                 <div className="Industry-Services-AboutUs">
+                    {/* checks that layoutData array has data before mapping */}
                     {layoutData.length && layoutData.map(link => (
+                        // Link that navigates to pages, dynamically created
+                        // according to JSON data
                         <NavLink
                             to={`/${link.slug}`}
                             className={`text-style-${selected === link.slug ? "1" : "0"}`}
